@@ -5,22 +5,22 @@ const PRODUCTS = [
   {
     icon: <SmartphoneNfc size={24} />,
     title: 'NFC Authentication',
-    desc: 'Tap-to-verify — customers authenticate physical products in seconds with a phone tap. No app download needed.',
+    desc: 'Instant tap-to-verify secure physical products via mobile.',
   },
   {
     icon: <QrCode size={24} />,
     title: 'Dynamic QR Codes',
-    desc: 'Trackable, updatable QR campaigns. Change the destination without reprinting a single label.',
+    desc: 'Trackable, updateable QR campaigns tailored for marketing & engagement.',
   },
   {
     icon: <Fingerprint size={24} />,
     title: 'Company NFC Tags',
-    desc: 'Smart digital business cards and employee access systems that update instantly and never expire.',
+    desc: 'Smart digital business cards and employee access systems.',
   },
   {
     icon: <ShieldCheck size={24} />,
     title: 'Product Authenticity',
-    desc: 'Cryptographic anti-counterfeit validation for luxury and consumer goods — provable, not just printed.',
+    desc: 'Anti-counterfeit cryptographic validations for luxury and consumer goods.',
   },
 ];
 
@@ -28,8 +28,7 @@ const Products = () => (
   <section id="products">
     <span className="section-label" style={{ textAlign: 'center' }}>Physical × Digital</span>
     <h2 className="section-title" style={{ textAlign: 'center' }}>
-      Smart Tech That Lives<br />
-      <span className="text-gradient">In The Real World.</span>
+      Physical Meets <span className="text-gradient">Digital</span>
     </h2>
     <p style={{
       textAlign: 'center',
@@ -39,7 +38,7 @@ const Products = () => (
       lineHeight: 1.75,
       fontSize: '0.95rem',
     }}>
-      Bridge offline touchpoints with intelligent digital systems using NFC, App Clips, and dynamic QR technology.
+      Leverage App Clips, NFC, and QR technology to bridge the gap between offline interactions and intelligent digital systems.
     </p>
 
     <div className="grid-2" style={{ maxWidth: '880px', margin: '0 auto' }}>

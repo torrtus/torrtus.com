@@ -20,7 +20,7 @@ const Connect = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Thanks for your feedback! We read everything.');
+    alert('Thank you for your feedback!');
     setFeedback('');
   };
 
@@ -28,13 +28,13 @@ const Connect = () => {
     <section id="connect">
       <span className="section-label" style={{ textAlign: 'center' }}>Contact</span>
       <h2 className="section-title" style={{ textAlign: 'center' }}>
-        Let's Talk.
+        Get In <span className="text-gradient">Touch</span>
       </h2>
 
       <div className="grid-2" style={{ maxWidth: '880px', margin: '0 auto', gap: '1.5rem' }}>
         {/* Contact info */}
         <div className="card" style={{ padding: '2.5rem' }}>
-          <h3 style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>Reach Us Directly</h3>
+          <h3 style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>Direct Access</h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <a
               href="mailto:team@torrtus.com"
@@ -66,7 +66,7 @@ const Connect = () => {
             <MessageSquare size={18} color="var(--accent)" /> Feedback
           </h3>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', marginBottom: '1.5rem', lineHeight: 1.6 }}>
-            Thoughts on our site or services? We read everything.
+            Let us know how we can improve our services or website.
           </p>
 
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -81,7 +81,7 @@ const Connect = () => {
               onBlur={e => e.target.style.borderColor = 'var(--border-subtle)'}
             />
             <button type="submit" className="cta-button" style={{ width: '100%', padding: '0.85rem' }}>
-              Send Feedback
+              Submit Feedback
             </button>
           </form>
         </div>

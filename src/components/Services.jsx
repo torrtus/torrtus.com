@@ -5,17 +5,17 @@ const SERVICES = [
   {
     icon: <Globe size={26} />,
     title: 'Website Hosting',
-    desc: 'Fast, secure infrastructure for web apps, landing pages, and SaaS platforms. We handle the stack so you focus on growth.',
+    desc: 'Ultra-fast, secure, and infinitely scalable web hosting for robust enterprise solutions.',
   },
   {
     icon: <Smartphone size={26} />,
-    title: 'iOS App Deployment',
-    desc: 'End-to-end App Store management — from TestFlight to production, including updates, reviews, and crash monitoring.',
+    title: 'AppStore Deployment',
+    desc: 'End-to-end iOS application hosting and maintenance on the Apple AppStore.',
   },
   {
     icon: <Server size={26} />,
-    title: 'Android App Deployment',
-    desc: 'Google Play Store publishing, version management, and performance tracking for Android applications.',
+    title: 'PlayStore Deployment',
+    desc: 'Seamless Android application delivery and optimization for Google PlayStore.',
   },
 ];
 
@@ -23,8 +23,7 @@ const Services = () => (
   <section id="services" style={{ background: 'rgba(8, 3, 12, 0.6)' }}>
     <span className="section-label" style={{ textAlign: 'center' }}>Hosting & Deployment</span>
     <h2 className="section-title" style={{ textAlign: 'center' }}>
-      Enterprise Infra.<br />
-      <span className="text-gradient">Startup Speed.</span>
+      Enterprise-Grade <span className="text-gradient">Hosting</span>
     </h2>
 
     <div className="grid-3">

@@ -4,33 +4,33 @@ import { Zap, Users, TrendingUp, Search, Bot, Shield } from 'lucide-react';
 const FEATURES = [
   {
     icon: <Zap size={18} />,
-    title: 'Ships in Under 2 Weeks',
-    desc: 'From kickoff call to live deployment. No 3-month timelines, no project sprawl.',
+    title: 'Speed of Light',
+    desc: 'Fastest development and deployment speed. From concept to live under 2 weeks.',
   },
   {
     icon: <Users size={18} />,
-    title: '1-on-1 Brand Manager',
-    desc: 'One dedicated person who knows your brand, handles communication, and drives outcomes.',
+    title: '1-on-1 Brand Management',
+    desc: '1 dedicated brand manager for each brand ensuring great client support and success.',
   },
   {
     icon: <TrendingUp size={18} />,
-    title: 'Built to Scale',
-    desc: 'Architecture designed for growth from day one. No painful rewrites when you hit traction.',
+    title: 'Scaling Small Brands',
+    desc: 'We help small scale brands to upgrade to greater heights and dominate their market.',
   },
   {
     icon: <Search size={18} />,
-    title: 'SEO & GEO Strategy',
-    desc: 'Visibility built in — search engine and geolocation strategy from the first commit.',
+    title: 'SEO & GEO Masterclass',
+    desc: 'Advanced search engine optimization and geolocation strategies for maximum visibility.',
   },
   {
     icon: <Bot size={18} />,
-    title: 'AI Support Agents',
-    desc: 'Custom-trained bots deployed on your site and app that genuinely handle customer queries.',
+    title: 'AI Driven Support',
+    desc: 'AI driven customer support chatbots enabled globally on your websites and apps.',
   },
   {
     icon: <Shield size={18} />,
-    title: 'Security First',
-    desc: 'Every system built with security architecture baked in — your data and your customers protected.',
+    title: 'Ironclad Reliability',
+    desc: 'Built with security-first architecture to protect your mission-critical data.',
   },
 ];
 
@@ -39,8 +39,7 @@ const Features = () => (
     <div style={{ maxWidth: '700px', margin: '0 auto 3.5rem auto', textAlign: 'center' }}>
       <span className="section-label">Why Torrtus</span>
       <h2 className="section-title" style={{ marginBottom: '0' }}>
-        Built Different.<br />
-        <span className="text-gradient">By Design.</span>
+        Core <span className="text-gradient">Advantage</span>
       </h2>
     </div>
 

@@ -13,17 +13,14 @@ const About = () => (
       <div>
         <span className="section-label">Who We Are</span>
         <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1.5rem' }}>
-          We Don't Just Write Code.<br />
-          <span className="text-gradient">We Build Leverage.</span>
+          Transforming Visions<br />
+          Into <span className="text-gradient">Reality</span>
         </h2>
         <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)', lineHeight: 1.85, marginBottom: '1.25rem' }}>
-          Torrtus is a lean IT services company focused on SaaS development and AI automation.
-          We build systems that work while you sleep — customer service agents, automated
-          workflows, intelligent dashboards.
+          Torrtus is a premier IT services company specializing in rapid SaaS project development and AI agents automation tools. We don't just write code; we architect autonomous systems that give your business an unfair advantage.
         </p>
         <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)', lineHeight: 1.85 }}>
-          Whether you're a first-time founder or running an established brand, we architect
-          solutions that give your team an unfair operational advantage.
+          Whether you're a startup or an established enterprise, our automation tools seamlessly integrate into your workflow, driving unprecedented efficiency.
         </p>
       </div>
 

@@ -12,22 +12,20 @@ const Hero = () => (
     <span className="hero-label fade-up">Torrtus · IT Services · AI Automation</span>
 
     <h1 className="hero-title fade-up-1">
-      We Build The Tech<br />
-      Behind Tomorrow's<br />
-      <span className="text-gradient">Brands.</span>
+      Forge The Future<br />
+      <span className="text-gradient">With AI & SaaS</span>
     </h1>
 
     <p className="hero-subtitle fade-up-2">
-      SaaS platforms, AI automation agents, and multi-platform app deployment —
-      crafted fast, built right, for brands that refuse to stay small.
+      Leading IT Services. Saas project development, intelligent AI agents automation, and world-class app hosting for ambitious brands.
     </p>
 
     <div className="cta-row fade-up-3">
       <button
         className="cta-button"
-        onClick={() => document.getElementById('query')?.scrollIntoView({ behavior: 'smooth' })}
+        onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
       >
-        Start a Project &rarr;
+        Explore Automation
       </button>
       <button
         className="cta-button-outline"

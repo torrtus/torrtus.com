@@ -39,13 +39,13 @@ const CEOSection = () => (
           margin: '0 auto 2rem auto',
           fontSize: '0.97rem',
         }}>
-          6 years of hands-on development experience. Tanishk leads the technical direction at Torrtus —
-          obsessing over performance, design integrity, and building systems that genuinely last.
+          With 6 years of deep development experience, Tanishk steers the technical vision of Torrtus,
+          obsessing over performance, aesthetics, and autonomous capabilities.
         </p>
 
         <a href="https://tanishkgupta.com" target="_blank" rel="noopener noreferrer">
           <button className="cta-button-outline">
-            Meet the Founder &rarr;
+            Meet The Founder
           </button>
         </a>
       </div>

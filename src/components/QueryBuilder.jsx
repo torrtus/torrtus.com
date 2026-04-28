@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { Send } from 'lucide-react';
 
 const PROJECT_TYPES = [
-  { id: 'app',        label: 'iOS / Android App' },
+  { id: 'app',        label: 'App (iOS/Android)' },
   { id: 'website',    label: 'Website' },
   { id: 'dashboard',  label: 'Dashboard' },
   { id: 'crm',        label: 'CRM' },
-  { id: 'automation', label: 'AI Automation' },
+  { id: 'automation', label: 'Automation Tool' },
   { id: 'ai',         label: 'AI Agents' },
-  { id: 'seo',        label: 'SEO / GEO' },
-  { id: 'branding',   label: 'Branding' },
+  { id: 'seo',        label: 'SEO/GEO Support' },
+  { id: 'branding',   label: 'Branding Support' },
 ];
 
 const inputStyle = {
@@ -42,11 +42,10 @@ const QueryBuilder = () => {
       <div style={{ maxWidth: '760px', margin: '0 auto' }}>
         <span className="section-label" style={{ textAlign: 'center' }}>Get Started</span>
         <h2 className="section-title" style={{ textAlign: 'center' }}>
-          Tell Us What<br />
-          <span className="text-gradient">You're Building.</span>
+          Start Your <span className="text-gradient">Project</span>
         </h2>
         <p style={{ textAlign: 'center', color: 'var(--text-muted)', marginBottom: '2.5rem', lineHeight: 1.7, fontSize: '0.95rem' }}>
-          From complex AI agents to a simple landing page — describe what you need and we'll get back within 24 hours.
+          Tell us what you need. From complex AI agents to simple branding support, we're ready.
         </p>
 
         <div className="card" style={{ padding: '2.5rem' }}>
@@ -55,7 +54,7 @@ const QueryBuilder = () => {
             {/* Project type */}
             <div>
               <label style={{ display: 'block', marginBottom: '0.9rem', fontWeight: 600, fontSize: '0.9rem' }}>
-                What are you looking to build?
+                What are you looking for?
               </label>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
                 {PROJECT_TYPES.map(t => (
@@ -90,7 +89,7 @@ const QueryBuilder = () => {
                 required
                 value={description}
                 onChange={e => setDescription(e.target.value)}
-                placeholder="What problem are you solving? Who's the audience? Any existing tech stack?"
+                placeholder="Tell us about the problem you are trying to solve..."
                 rows={4}
                 style={{ ...inputStyle, resize: 'vertical' }}
                 onFocus={e => e.target.style.borderColor = 'var(--accent)'}
@@ -101,14 +100,14 @@ const QueryBuilder = () => {
             {/* Email */}
             <div>
               <label style={{ display: 'block', marginBottom: '0.9rem', fontWeight: 600, fontSize: '0.9rem' }}>
-                Your email address
+                How can we reach you?
               </label>
               <input
                 type="email"
                 required
                 value={email}
                 onChange={e => setEmail(e.target.value)}
-                placeholder="you@company.com"
+                placeholder="Your email address"
                 style={inputStyle}
                 onFocus={e => e.target.style.borderColor = 'var(--accent)'}
                 onBlur={e => e.target.style.borderColor = 'var(--border-subtle)'}
@@ -120,7 +119,7 @@ const QueryBuilder = () => {
               className="cta-button"
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', padding: '1rem', fontSize: '1rem' }}
             >
-              Send to Torrtus <Send size={16} />
+              Connect With Torrtus <Send size={16} />
             </button>
           </form>
         </div>
