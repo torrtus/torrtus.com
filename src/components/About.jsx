@@ -1,57 +1,45 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
-const About = () => {
-  return (
-    <section id="about" style={{ minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
-      <div className="grid-2">
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1.5rem' }}>
-            Transforming Visions <br/> Into <span className="text-gradient">Reality</span>
-          </h2>
-          <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '2rem' }}>
-            Torrtus is a premier IT services company specializing in rapid SaaS project development and AI agents automation tools. We don't just write code; we architect autonomous systems that give your business an unfair advantage.
-          </p>
-          <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-            Whether you're a startup or an established enterprise, our automation tools seamlessly integrate into your workflow, driving unprecedented efficiency.
-          </p>
-        </motion.div>
+const METRICS = [
+  { num: '7+',    label: 'Brands Served',  sub: 'Across India' },
+  { num: '6',     label: 'Years Building', sub: 'In production' },
+  { num: '3',     label: 'Platforms',      sub: 'Web · iOS · Android' },
+  { num: '~2 wk', label: 'Avg Delivery',   sub: 'Concept to live' },
+];
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-        >
-          <div className="glass-panel" style={{ padding: '3rem', position: 'relative', zIndex: 2 }}>
-            <h3 style={{ fontSize: '2rem', marginBottom: '1rem', color: 'var(--accent-cyan)' }}>AI Agents Automation</h3>
-            <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>Deploy highly intelligent, self-correcting agents that handle repetitive tasks, customer service, and complex data analysis automatically.</p>
-          </div>
-          {/* Decorative element */}
-          <div style={{
-            position: 'absolute',
-            top: '-20px', right: '-20px',
-            width: '100px', height: '100px',
-            borderRight: '2px solid var(--accent-purple)',
-            borderTop: '2px solid var(--accent-purple)',
-          }}></div>
-          <div style={{
-            position: 'absolute',
-            bottom: '-20px', left: '-20px',
-            width: '100px', height: '100px',
-            borderLeft: '2px solid var(--accent-cyan)',
-            borderBottom: '2px solid var(--accent-cyan)',
-          }}></div>
-        </motion.div>
+const About = () => (
+  <section id="about">
+    <div className="grid-2" style={{ alignItems: 'center', gap: '3.5rem' }}>
+      <div>
+        <span className="section-label">Who We Are</span>
+        <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1.5rem' }}>
+          We Don't Just Write Code.<br />
+          <span className="text-gradient">We Build Leverage.</span>
+        </h2>
+        <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)', lineHeight: 1.85, marginBottom: '1.25rem' }}>
+          Torrtus is a lean IT services company focused on SaaS development and AI automation.
+          We build systems that work while you sleep — customer service agents, automated
+          workflows, intelligent dashboards.
+        </p>
+        <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)', lineHeight: 1.85 }}>
+          Whether you're a first-time founder or running an established brand, we architect
+          solutions that give your team an unfair operational advantage.
+        </p>
       </div>
-    </section>
-  );
-};
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+        {METRICS.map((m, i) => (
+          <div key={i} className="card">
+            <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent)', lineHeight: 1, marginBottom: '0.4rem' }}>
+              {m.num}
+            </div>
+            <div style={{ fontWeight: 700, fontSize: '0.9rem', marginBottom: '0.2rem' }}>{m.label}</div>
+            <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>{m.sub}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
 
 export default About;

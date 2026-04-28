@@ -1,57 +1,56 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
-const CEOSection = () => {
-  return (
-    <section id="ceo" style={{ textAlign: 'center', margin: '4rem auto 8rem auto' }}>
-      <motion.div
-        className="glass-panel"
-        style={{ maxWidth: '800px', margin: '0 auto', padding: '4rem 2rem' }}
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
+const CEOSection = () => (
+  <section id="ceo" style={{ background: 'rgba(8, 3, 12, 0.6)' }}>
+    <div style={{ maxWidth: '640px', margin: '0 auto', textAlign: 'center' }}>
+      <span className="section-label">Founder</span>
+
+      <div className="card" style={{ padding: '3rem 2rem' }}>
         <div style={{
-          width: '120px', height: '120px',
+          width: '72px', height: '72px',
           borderRadius: '50%',
-          margin: '0 auto 2rem auto',
-          background: 'linear-gradient(45deg, var(--accent-purple), var(--accent-cyan))',
-          display: 'flex', justifyContent: 'center', alignItems: 'center',
-          fontSize: '2.5rem', fontWeight: 'bold'
+          margin: '0 auto 1.5rem auto',
+          background: 'linear-gradient(135deg, var(--pink-4), var(--pink-3))',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          fontSize: '1.3rem', fontWeight: 800,
+          border: '2px solid var(--border)',
         }}>
           TG
         </div>
-        <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Tanishk Gupta</h2>
-        <h4 style={{ color: 'var(--accent-cyan)', fontSize: '1.2rem', marginBottom: '2rem', letterSpacing: '2px', textTransform: 'uppercase' }}>
-          CEO / Founder
-        </h4>
-        <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', lineHeight: 1.7, marginBottom: '3rem', maxWidth: '600px', margin: '0 auto 3rem auto' }}>
-          With 6 years of deep development experience, Tanishk steers the technical vision of Torrtus, obsessing over performance, aesthetics, and autonomous capabilities.
+
+        <h2 style={{ fontSize: '1.9rem', marginBottom: '0.3rem' }}>Tanishk Gupta</h2>
+        <p style={{
+          color: 'var(--accent)',
+          fontSize: '0.72rem',
+          letterSpacing: '0.2em',
+          textTransform: 'uppercase',
+          fontWeight: 700,
+          marginBottom: '1.5rem',
+          fontFamily: "'Syncopate', sans-serif",
+        }}>
+          CEO &amp; Founder
         </p>
-        
-        <a 
-          href="https://tanishkgupta.com" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          style={{ display: 'inline-block' }}
-        >
-          <motion.button 
-            className="cta-button"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            style={{ 
-              background: 'transparent', 
-              border: '1px solid var(--accent-cyan)', 
-              boxShadow: '0 0 15px rgba(0, 240, 255, 0.2)' 
-            }}
-          >
-            Meet The Founder
-          </motion.button>
+
+        <p style={{
+          color: 'var(--text-muted)',
+          lineHeight: 1.85,
+          marginBottom: '2rem',
+          maxWidth: '46ch',
+          margin: '0 auto 2rem auto',
+          fontSize: '0.97rem',
+        }}>
+          6 years of hands-on development experience. Tanishk leads the technical direction at Torrtus —
+          obsessing over performance, design integrity, and building systems that genuinely last.
+        </p>
+
+        <a href="https://tanishkgupta.com" target="_blank" rel="noopener noreferrer">
+          <button className="cta-button-outline">
+            Meet the Founder &rarr;
+          </button>
         </a>
-      </motion.div>
-    </section>
-  );
-};
+      </div>
+    </div>
+  </section>
+);
 
 export default CEOSection;
