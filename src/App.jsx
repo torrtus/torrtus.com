@@ -13,6 +13,9 @@ import CEOSection from './components/CEOSection';
 import Connect from './components/Connect';
 import Footer from './components/Footer';
 import AdminLogin from './components/AdminLogin';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
+import OAuthCallback from './components/OAuthCallback';
 
 const MainLayout = () => (
   <>
@@ -40,6 +43,9 @@ function App() {
         <Route path="/" element={<MainLayout />} />
         <Route path="/admin-dashboard/:clientName" element={<AdminLogin />} />
         <Route path="/client-dashboard/:clientName" element={<AdminLogin />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/callback" element={<OAuthCallback />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,6 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const LINKS = ['Privacy Policy', 'Terms of Service', 'Contact'];
+const LINKS = [
+  { label: 'Privacy Policy', to: '/privacy' },
+  { label: 'Terms of Service', to: '/terms' },
+  { label: 'Contact', to: '/#connect' },
+];
 
 const Footer = () => (
   <footer style={{
@@ -24,16 +29,16 @@ const Footer = () => (
     </p>
 
     <div style={{ display: 'flex', justifyContent: 'center', gap: '1.75rem', flexWrap: 'wrap' }}>
-      {LINKS.map(l => (
-        <a
-          key={l}
-          href="#"
+      {LINKS.map(({ label, to }) => (
+        <Link
+          key={label}
+          to={to}
           style={{ color: 'var(--text-muted)', fontSize: '0.82rem', transition: 'color 0.2s' }}
           onMouseEnter={e => e.currentTarget.style.color = 'var(--accent)'}
           onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
         >
-          {l}
-        </a>
+          {label}
+        </Link>
       ))}
     </div>
   </footer>
