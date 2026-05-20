@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import { useSEO } from '../hooks/useSEO';
 
 const Section = ({ title, children }) => (
   <div style={{ marginBottom: '3rem', paddingBottom: '3rem', borderBottom: '1px solid var(--border-subtle)' }}>
@@ -19,7 +20,13 @@ const Section = ({ title, children }) => (
   </div>
 );
 
-const TermsOfService = () => (
+const TermsOfService = () => {
+  useSEO({
+    title: 'Terms of Service',
+    description: 'Read the Torrtus IT Services Terms of Service to understand the conditions of using our IT services, SaaS development, and AI automation solutions.',
+    canonical: 'https://torrtus.com/terms',
+  });
+  return (
   <>
     <div className="site-bg" />
     <Navbar />
@@ -235,6 +242,7 @@ const TermsOfService = () => (
       </div>
     </div>
   </>
-);
+  );
+};
 
 export default TermsOfService;

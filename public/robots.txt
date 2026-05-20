@@ -1,0 +1,39 @@
+# Standard crawlers
+User-agent: *
+Allow: /
+Disallow: /admin-dashboard/
+Disallow: /client-dashboard/
+Disallow: /callback
+
+# ChatGPT Search (OpenAI)
+User-agent: OAI-SearchBot
+Allow: /
+
+# ChatGPT Browsing
+User-agent: ChatGPT-User
+Allow: /
+
+# OpenAI GPTBot (training + search)
+User-agent: GPTBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic Claude
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Google (AI Overviews)
+User-agent: Googlebot
+Allow: /
+
+# Bing (powers ChatGPT Search)
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://torrtus.com/sitemap.xml

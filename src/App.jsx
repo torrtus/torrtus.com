@@ -16,25 +16,35 @@ import AdminLogin from './components/AdminLogin';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
 import OAuthCallback from './components/OAuthCallback';
+import FAQSection from './components/FAQSection';
+import { useSEO } from './hooks/useSEO';
 
-const MainLayout = () => (
-  <>
-    <div className="site-bg" />
-    <Navbar />
-    <div className="app-container">
-      <Hero />
-      <Clients />
-      <About />
-      <Services />
-      <Products />
-      <Features />
-      <QueryBuilder />
-      <CEOSection />
-      <Connect />
-      <Footer />
-    </div>
-  </>
-);
+const MainLayout = () => {
+  useSEO({
+    title: 'AI Automation & SaaS Development India',
+    description: "Torrtus is India's premier IT services company. We build SaaS products, AI automation agents, and deploy apps across Web, iOS & Android. 7+ brands served. ~2 week delivery.",
+    canonical: 'https://torrtus.com/',
+  });
+  return (
+    <>
+      <div className="site-bg" />
+      <Navbar />
+      <div className="app-container">
+        <Hero />
+        <Clients />
+        <About />
+        <Services />
+        <Products />
+        <Features />
+        <QueryBuilder />
+        <CEOSection />
+        <FAQSection />
+        <Connect />
+        <Footer />
+      </div>
+    </>
+  );
+};
 
 function App() {
   return (

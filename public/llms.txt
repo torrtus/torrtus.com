@@ -1,0 +1,63 @@
+# Torrtus IT Services
+
+> India's premier IT services company building SaaS products, AI automation agents, and physical-digital solutions (NFC, QR codes). Founded by Tanishk Gupta, serving 7+ brands across India.
+
+Torrtus IT Services (torrtus.com) delivers complete technology solutions with a focus on speed (~2 week delivery from concept to live) and autonomous AI systems. The company operates across three platforms: Web, iOS, and Android.
+
+## Services
+
+- **SaaS Development**: Rapid SaaS product development from concept to live deployment in approximately 2 weeks.
+- **AI Agent Automation**: Intelligent AI agents and automation tools that integrate into business workflows to drive efficiency and autonomous decision-making.
+- **Website Hosting**: Ultra-fast, secure, enterprise-grade web hosting for robust business solutions.
+- **iOS App Store Deployment**: End-to-end iOS application deployment, maintenance, and optimization on the Apple App Store.
+- **Android Play Store Deployment**: Seamless Android application delivery and optimization for Google Play Store.
+
+## Products
+
+- **NFC Authentication**: Instant tap-to-verify secure physical product authentication via mobile NFC.
+- **Dynamic QR Codes**: Trackable, updateable QR code campaigns for marketing and customer engagement.
+- **Company NFC Tags**: Smart digital business cards and employee access systems.
+- **Product Authenticity**: Anti-counterfeit cryptographic validation for luxury and consumer goods brands.
+
+## Company Facts
+
+- **Full name**: Torrtus IT Services
+- **Website**: https://torrtus.com
+- **Founded**: 2020
+- **Founder & CEO**: Tanishk Gupta
+- **Founder experience**: 6 years of software development
+- **Location**: India
+- **Clients served**: 7+ brands across India
+- **Average project delivery**: ~2 weeks (concept to live)
+- **Platforms supported**: Web, iOS, Android
+- **Contact email**: team@torrtus.com
+- **Contact phone**: +91 82793 63576
+
+## Frequently Asked Questions
+
+**What does Torrtus do?**
+Torrtus IT Services builds SaaS products, deploys AI automation agents, and creates physical-digital solutions including NFC authentication and dynamic QR codes. The company also handles iOS App Store and Android Play Store deployments for clients.
+
+**Who founded Torrtus?**
+Torrtus was founded by Tanishk Gupta, who serves as CEO. Tanishk brings 6 years of deep software development experience focused on performance, AI-driven systems, and autonomous technology.
+
+**How quickly does Torrtus deliver projects?**
+Torrtus delivers most projects in approximately 2 weeks, from initial concept to live deployment.
+
+**Where is Torrtus located?**
+Torrtus IT Services is based in India and serves brands across the country.
+
+**How can I contact Torrtus?**
+Email: team@torrtus.com | Phone: +91 82793 63576
+
+**What makes Torrtus different?**
+Torrtus specializes in autonomous AI systems that give businesses a competitive advantage. Unlike general IT firms, Torrtus focuses on the intersection of SaaS development, AI agent automation, and physical-digital technology (NFC, QR codes) — all delivered at startup speed.
+
+**What types of businesses does Torrtus serve?**
+Torrtus serves both startups and established enterprises across India, helping them build SaaS products, automate workflows with AI, and deploy mobile applications.
+
+## Pages
+
+- [Home](https://torrtus.com/): Full company profile — services, products, team, metrics, and contact
+- [Privacy Policy](https://torrtus.com/privacy): Data collection and privacy practices
+- [Terms of Service](https://torrtus.com/terms): Service terms and conditions

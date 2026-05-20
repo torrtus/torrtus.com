@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import { useSEO } from '../hooks/useSEO';
 
 const Section = ({ title, children }) => (
   <div style={{ marginBottom: '3rem', paddingBottom: '3rem', borderBottom: '1px solid var(--border-subtle)' }}>
@@ -19,7 +20,13 @@ const Section = ({ title, children }) => (
   </div>
 );
 
-const PrivacyPolicy = () => (
+const PrivacyPolicy = () => {
+  useSEO({
+    title: 'Privacy Policy',
+    description: 'Read the Torrtus IT Services Privacy Policy to understand how we collect, use, and protect your data.',
+    canonical: 'https://torrtus.com/privacy',
+  });
+  return (
   <>
     <div className="site-bg" />
     <Navbar />
@@ -258,6 +265,7 @@ const PrivacyPolicy = () => (
       </div>
     </div>
   </>
-);
+  );
+};
 
 export default PrivacyPolicy;

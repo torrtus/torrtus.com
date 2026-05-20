@@ -1,0 +1,17 @@
+{
+  "name": "Torrtus IT Services",
+  "short_name": "Torrtus",
+  "description": "India's premier IT services company — SaaS development, AI automation, and app deployment.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#7c6aff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
